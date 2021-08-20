@@ -2,3 +2,12 @@
     width: 400px;
     height: 400px;
 }
+.total-border{
+    border-top: 2px solid black;
+}
+.main-border{
+    border-bottom:2px solid gray ;
+}
+.header-bottom{
+    border-bottom: 2px solid black;
+}
