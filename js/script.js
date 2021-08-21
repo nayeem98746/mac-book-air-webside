@@ -2,31 +2,49 @@
 
 function selectMemory (memorygb ){
     const memoryCost1 = document.getElementById('memory-cost')
-    let  memoryCostText1 = memoryCost1.innerText
+   
+
     
     if(memorygb == true){
-        memoryCost1.innerText =  parseInt('0')
-
+       
+         let  memoryCostText1 = memoryCost1.innerText = '0'
+        const memoryCost8 = parseFloat(memoryCostText1)
+     
     }
     else if (memorygb == false){
-        memoryCost1.innerText =  parseInt( '180') 
+        let  memoryCostText1 = memoryCost1.innerText = '180'
+           const memoryCost16 = parseFloat(memoryCostText1)
+           
     }
-   
+    
     
      
-}
+} 
 
  const memory1 = document.getElementById('memory-1').addEventListener('click', function(){
-
+    
     selectMemory(true)
+
   
 
    
 
 })
+
+// total price
+
+
+
+
+
+
 const memory2 = document.getElementById('memory-2').addEventListener('click', function(){
 
    selectMemory(false)
+
+   const memoryCost1 = document.getElementById('memory-cost')
+   let  memoryCostText1 = memoryCost1.innerText = '180'
+   const memoryCost = parseFloat(memoryCostText1)
    
 
     
@@ -35,29 +53,25 @@ const memory2 = document.getElementById('memory-2').addEventListener('click', fu
 
 const storage256 = document.getElementById('storage-256').addEventListener('click',function(){
     const storageCost = document.getElementById('storage-cost')
-    const storageCostText = storageCost.innerText
-    storageCost.innerText = parseInt('0')
-    // parseFloat('0') = storageCostText;
-    const totalPrice = document.getElementById('total-price')
-    const totalPriceText = totalPrice.innerText
-    totalPrice.innerText= parseFloat(totalPriceText) + storageCostText
+    let storageCostText = storageCost.innerText = '0'
+    storageCost.innerText = parseInt(storageCostText)
+    
     
 })
 const storage512 = document.getElementById('storage-512').addEventListener('click', function(){
     const storageCost = document.getElementById('storage-cost')
-    const storageCostText = storageCost.innerText
-    storageCost.innerText = parseInt('100')
+    let storageCostText = storageCost.innerText = '100'
+    storageCost.innerText = parseInt(storageCostText)
 
-    const totalPrice = document.getElementById('total-price')
-
+    
 
     
     
 })
 const storage1T = document.getElementById('storage-1T').addEventListener('click', function(){
     const storageCost = document.getElementById('storage-cost')
-    const storageCostText = storageCost.innerText
-    storageCost.innerText = parseInt('180')
+    let storageCostText = storageCost.innerText = '180'
+    storageCost.innerText = parseInt(storageCostText)
 })
 
 // delivary function
@@ -83,3 +97,15 @@ const costDelivery = document.getElementById('cost-delivery').addEventListener('
     
     getDelivery(false)  
 })
+// input discount
+
+const totalDiscount = document.getElementById('total-discount')
+const applyButton = document.getElementById('apply-button')
+    
+    const inputPromocode = document.getElementById('input-promocode').addEventListener('keypr')
+    const inputPromocodeText = inputPromocode.value 
+    
+
+
+
+
